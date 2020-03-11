@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    /* border: 2px solid #ccc; */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+main {
+    margin-top: 138px;
+}
+
+header ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+header li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+li a {
+    text-decoration: none;
+    color: #555;
+}
+
+li a.active {
+    font-weight: bold;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+section#banner {
+    background-image: url('../img/jane.jpg');
+    width: 100%;
+    height: 73vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+main#about {
+    text-align: center;
+}
+
+main#about p {
+    font-weight: bold;
+}
+
+main#about p cite {
+    font-weight: normal;
+}
+
+main#about img {
+    width: 20%;
+    height: 32vh;
+}
+
+main#music { 
+    max-width: 100%;
+}
+
+section#concept,
+section#songs {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.duas-colunas {
+    overflow: hidden;
+}
+
+.duas-colunas>div {
+    width: 50%;
+    float: left;
+}
+
+section#songs img {
+    width: 100%;
+}
+
+section#songs li {
+    padding: 10px 0;
+}
+
+section#songs li strong {
+    color: orange;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.form-group {
+    margin: 0 0 10px;
+}
+
+form textarea {
+    resize: none;
+    height: 50px;
+}
+
+.form-group button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+}
+
+.mapa {
+    padding-left: 30px;
+} 
+
+.mapa iframe {
+    width: 50%;
+    height: 300px;
+}
+
+@media(max-width: 768px) {
+    .duas-colunas>div {
+        width: 100%;
+    }
+
+    section#concept,
+    section#songs {
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    section#concept p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    section#songs div ol {
+        font-size: 26px;
+    }
+
+    nav ul {
+        font-size: 24px;
+    }
+
+    main#music{
+        padding: 0 40px;
+    }
+
+    main#music ul li{
+        font-size: 24px;
+    }
+
+    main#music p {
+        font-size: 20px;
+    }
+
+    main#music iframe {
+        width: 100%;
+    }
+
+    main#contact {
+        padding: 0 40px;
+    }
+
+    main#contact form input{
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    main#contact form button{
+        padding: 10px 35px;
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    main#contact .form-group{
+        margin-bottom: 30px;
+    }
+
+    main#contact .mapa {
+        padding: 0;
+    }
+
+    form {
+        font-size: 24px;
+    }
+
+    section#contactInfo {
+        font-size: 25px;
+    }
+
+}
